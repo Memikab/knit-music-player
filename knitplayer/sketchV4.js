@@ -93,7 +93,7 @@ function setup() {
 
     let downloadBtn = createButton("Download JSON"); // Create download button
     downloadBtn.position(300, 200); // Position next to start button
-    downloadBtn.mousePressed(downloadData); // When clicked, run downloadData funct
+    downloadBtn.mousePressed(downloadData); // When clicked, run downloadData function
     
     }
 
@@ -114,17 +114,17 @@ function draw() {
 
 
     if (isConnected) {
-        //midi 1
+        //midi I mapped to sensor1
         i = Math.floor(map(sensor1Value, 1023, 0, 0, midiNotes.length));
         freqs = midiToFreq(midiNotes[i]);
         osc.freq(freqs);
         console.log('midiI' + midiNotes[i]);
-        //midi 2
+        //midi J mapped to sensor2
       j = Math.floor(map(sensor2Value, 1023, 0, 0, midiNotes.length));
         freqs = midiToFreq(midiNotes[j]);
         osc2.freq(freqs);
         console.log('midiJ' + midiNotes[j]);
-        //midi 3
+        //midi N mapped to sensor3
        n = Math.floor(map(sensor3Value, 1023, 0, 0, midiNotes.length));
         freqs = midiToFreq(midiNotes[n]);
         osc3.freq(freqs);
