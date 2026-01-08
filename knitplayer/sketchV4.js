@@ -77,12 +77,15 @@ function setup() {
     console.log('P5.js sketch initialized');
     console.log('Waiting for Arduino data...');
 
+//midi I
     osc = new p5.TriOsc();
      osc.amp(1);
      osc.start();
+//midi J
     osc2 = new p5.TriOsc();
      osc2.amp(1);
      osc2.start();
+//midi N
     osc3 = new p5.TriOsc();
      osc3.amp(1);
      osc3.start();
