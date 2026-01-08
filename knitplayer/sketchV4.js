@@ -170,7 +170,7 @@ function draw() {
 }
 function startSaving() {
     saving = true; 
-    setInterval(saveCurrentReading, 1); // Run saveCurrentData every X milliseconds
+    setInterval(saveCurrentReading, 1); 
     console.log("Started saving every " + saveMinutes + " minutes"); // Tell us it started
     console.log("start saving")
     
